@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('system_heartbeats', function (Blueprint $table) {
             $table->id();
+            $table->string('sistema');
             $table->timestamps();
         });
     }
